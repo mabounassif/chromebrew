@@ -9,7 +9,7 @@ CREW_PACKAGES_PATH=$CREW_LIB_PATH/packages
 user=$(whoami)
 architecture=$(uname -m)
 
-if [ $architecture != "i686" ] && [ $architecture != "x86_64" ]; then
+if [ $architecture != "i686" ] && [ $architecture != "x86_64" ] && [ $architecture != "armv7l"]; then
   echo 'Your device is not supported by Chromebrew yet.'
   exit 1;
 fi
