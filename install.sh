@@ -7,7 +7,7 @@ CREW_DEST_DIR=$CREW_BREW_DIR/dest
 CREW_PACKAGES_PATH=$CREW_LIB_PATH/packages
 
 user=$(whoami)
-architecture=$(uname -m)
+architecture="i686"
 
 if [ $architecture != "i686" ] && [ $architecture != "x86_64" ] && [ $architecture != "armv7l"]; then
   echo 'Your device is not supported by Chromebrew yet.'
